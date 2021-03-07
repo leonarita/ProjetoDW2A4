@@ -1,0 +1,24 @@
+COMANDOS BASE:
+
+- ng generate component <name>  =>  ng g c <name>
+- ng generate service   <name>  =>  ng g s <name>
+- ng generate directive <name>  =>  ng g d <name>
+- ng generate pipe      <name>  =>  ng g p <name>
+- ng generate guard     <name>  =>  ng g g <name>
+
+
+
+COMANDOS E ARGUMENTOS ANGULAR
+
+ Instalar versão angular especifica: npm install –g @angular/cli@<version>
+ Instalar dependência especifica: npm i [dependency@~<version>]
+
+ Criar projeto sem arquivos de teste: ng new <projectName> --skip-tests
+
+ Criar componente sem arquivos de teste
+  Normal        : ng g c <nameComponent> --spec=false
+  Microsserviço : ng g c <nameComponent> --spec=false --project=[project]
+
+
+
+

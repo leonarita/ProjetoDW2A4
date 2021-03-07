@@ -1,0 +1,29 @@
+EXAMPLE01 - APLICAÇÃO FUNCIONAL
+
+ Criar projeto : ng new <projectName>
+
+
+EXAMPLE02 - MICROFRONTEND
+
+ Criar projeto       : ng new <projectName> --createApplication="false"
+   Criar library     : ng generate library <libName>
+   Criar application : ng generate application <appName>
+
+     Criar estrutura em algum projeto do microsserviço
+       ng g c <nameComponent> --project=[project]
+       ng g s <nameService> --project=[project]
+
+
+EXAMPLE03 - COMANDOS
+
+ Criar projeto : ng new <projectName>
+
+   ng g c example-component
+   ng g s example-service/example-service
+   ng g d example-directive/example-directive
+   ng g p example-pipe/example-pipe
+   ng g g example-guard/example-guard
+
+   ng g class example/example-class
+   ng g enum example/example-enum
+   ng g interface example/example-interface
