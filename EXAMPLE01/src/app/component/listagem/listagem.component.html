@@ -1,0 +1,47 @@
+<div class="centralize">
+    <h1>LISTAGEM DE LIVROS</h1>
+</div>
+
+<div class="back-button-container">
+    <button (click)="voltar()">Voltar</button>
+</div>
+
+<div class="container-division">
+
+    <div class="show-data-backend">
+
+        <ng-container *ngIf="validarLivros(); else mostrarLivros">Não há dados</ng-container>
+
+        <ng-template #mostrarLivros>
+
+            <div *ngFor="let f of livros" class="book-information">
+                <p>O livro "{{f.titulo}}" foi lançado em {{f.dataPublicacao | date: 'dd/MM/yyyy'}} <s>({{f.dataPublicacao}})</s></p>
+                <p (click)="deleteById(f.idItemAcervo)">X</p>
+            </div>
+
+        </ng-template> 
+
+    </div>
+
+    <div>
+
+    <div class="forms">
+
+        <h2>Cadastro de Item: {{livro.titulo}}</h2>
+
+        <mat-form-field class="example-full-width" style="font-size: 1rem;">
+            <mat-label>Informe o título da obra</mat-label>
+            <input matInput [(ngModel)]="livro.titulo">
+        </mat-form-field>
+
+        <div class="buttons-block">
+            <button (click)="livro.titulo = null;">Limpar</button>
+            <button (click)="cadastrar()">Cadastrar</button>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+

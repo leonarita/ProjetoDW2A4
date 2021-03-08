@@ -1,0 +1,27 @@
+.home-platform header h1 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.home-platform header p {
+    font: 400 1.5rem/1 'Nunito', sans-serif;
+    margin: .2rem;
+}
+
+.home-platform .buttons-block {
+    margin-top: 5%;
+}
+
+.home-platform .buttons-block button {
+    padding: 1rem;
+    margin: 1rem;
+    background: #12AFCB;
+    color: white;
+    font: 400 1rem/1 'Nunito', sans-serif;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+

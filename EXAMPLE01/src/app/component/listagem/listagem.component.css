@@ -1,0 +1,106 @@
+h1 {
+    font-family: 'Archivo', sans-serif;
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    
+    border-bottom: 2px solid #2b2d43;
+}
+
+h2 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+}
+
+.back-button-container {
+    display: grid;
+    justify-content: end;
+    
+    margin: .2rem 4rem;
+}
+
+.back-button-container button {
+    padding: .2rem .4rem;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: .8rem;
+    background: #DCDCDC;
+}
+
+.container-division {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 32px;
+    
+}
+
+.container-division .show-data-backend .book-information {
+    background: aquamarine;
+    padding: .8rem;
+    border-radius: .5rem;
+    /* box-shadow: 0 4px 17px rgb(0 0 0 / 35%); */
+
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    margin-bottom: 12px;
+    font: 400 1rem/1 'Nunito', sans-serif;
+    
+    background: #2b2d43;
+    color: #f31656;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-division .show-data-backend .book-information p {
+    margin: 0;
+}
+
+.container-division .show-data-backend .book-information p:nth-child(1) {
+    color: white;
+}
+
+.container-division .show-data-backend .book-information p:nth-child(2) {
+    cursor: pointer;
+}
+
+.container-division .forms {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+    border-radius: .5rem;
+    margin-left: 2rem;
+
+    height: 220px;
+}
+
+.container-division .forms .buttons-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-division .forms .buttons-block button {
+    width: 40%;
+    padding: .4rem 0;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.container-division .forms .buttons-block button:nth-child(1) {
+    background: #f74a67;
+    border: navajowhite;
+    border-radius: .2rem;
+    color: white;
+}
+
+.container-division .forms .buttons-block button:nth-child(2) {
+    background: #04BF58;
+    border: navajowhite;
+    border-radius: .2rem;
+    color: white;
+}
+
+
