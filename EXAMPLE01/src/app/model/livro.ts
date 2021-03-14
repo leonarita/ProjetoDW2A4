@@ -7,6 +7,8 @@ export class Livro {
     areaConhecimento: string = "";
     codigoCatalogacao: string = "";
     isbn: number = 111;
+
+    tipoItem = "LIVRO";
 }
 
 // CLASS, INTERFACE, ENUM

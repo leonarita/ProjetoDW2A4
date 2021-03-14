@@ -1,0 +1,26 @@
+1) Estruturas Fundamentais
+- Classe : ng g class <nameClass>
+- Enum : ng g enum <nameEnum>
+- Interface : ng g interface <nameInterf>
+
+2) Componente: Estrutura HTML, CSS e JS que realiza telas ou componentização
+  ng g c <nameComponent>
+
+3) Module: Classe responsável por gerenciar imports, exports para componentes declarados em seu contexto
+  ng g m <nameModule>
+
+4) Service: Classe Responsável por realizar a injeção de dependência
+  ng g s <nameService>
+Ex: Conexão com o backend
+
+5) Pipe: Estrutura responsável por formatar dados
+  ng g p <namePipe>
+Ex: Data, Valor Monetário
+
+6) Directive: Estrutura lógica nas tags HTML
+  ng g d <nameDirective>
+Ex: If-Else, For
+
+7) Guard: Classe responsável por criar regras de restrição nas rotas
+  ng g g <nameGuard>
+Ex: O administrador do sistema vai ter acesso às estatístics do sistema

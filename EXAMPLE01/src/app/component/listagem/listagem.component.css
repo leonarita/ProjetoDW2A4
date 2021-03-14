@@ -24,6 +24,7 @@ h2 {
     font-family: 'Nunito', sans-serif !important;
     font-size: .8rem;
     background: #DCDCDC;
+    cursor: pointer;
 }
 
 .container-division {
