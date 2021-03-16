@@ -9,6 +9,10 @@ export class Livro {
     isbn: number = 111;
 
     tipoItem = "LIVRO";
+
+    constructor(titulo?: string) {
+        this.titulo = titulo;
+    }
 }
 
 // CLASS, INTERFACE, ENUM
