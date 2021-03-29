@@ -1,0 +1,13 @@
+.form {
+
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+
+    .block-input {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

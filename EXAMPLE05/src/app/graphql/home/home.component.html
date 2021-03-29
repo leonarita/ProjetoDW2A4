@@ -1,0 +1,31 @@
+<div class="home">
+
+    <div class="data">
+        <div *ngFor="let l of livros">
+            <p class="book-data" (click)="navigateToForm(l.id)">
+                {{l.titulo}} 
+                <small (click)="deleteById(l.id)">X</small>
+            </p>
+        </div>
+    </div>
+
+    <div class="data">
+
+        <h1 *ngIf="livro !== undefined; else notFound">
+            LIVRO BUSCADO: {{livro.titulo}} {{livro.subtitulo !== null ? ':' + livro.subtitulo : ''}}
+        </h1>
+
+        <ng-template #notFound>
+            <h2>NOT FOUND BOOK</h2>
+        </ng-template>
+
+        <p>Informe o nome do livro</p>
+        <input type="text" name="" id="" [(ngModel)]="titulo" (change)="findByTitle(titulo)">
+
+    </div>
+
+</div>
+
+<div class="button" (click)="navigateToForm(null)">
+    <button>Cadastrar Livro</button>
+</div>
