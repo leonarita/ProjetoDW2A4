@@ -1,0 +1,48 @@
+<div class="static-data">
+
+    <div class="introduction">
+        <h1>{{date}}</h1>
+
+        <div class="container-form-reactive">
+            <input type="file" (change)="onFileSelected($event)" #fileUpload>
+        </div>
+    </div>
+    
+    <div class="reactive">
+
+        <div class="container-form-reactive">
+            <h2>"{{name}}" tem {{length}} letras</h2>
+    
+            <app-container-input-button (click)="updateData($event)" [label]="'Clique aqui'"></app-container-input-button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="backend-data">
+        <h2>API REST</h2>
+
+        <div *ngFor="let livro of livros">
+            <p>{{livro.titulo}}</p>
+        </div>
+
+        <app-container-input-button (click)="filterData($event)" [label]="'Filtrar'"></app-container-input-button>
+    </div>
+
+    <div class="backend-data">
+        <h2>GRAPHQL</h2>
+
+        <div *ngFor="let livro of livrosGraphQL">
+            <p>{{livro.titulo}}</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
