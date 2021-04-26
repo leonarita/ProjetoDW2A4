@@ -1,7 +1,13 @@
 <div class="static-data">
 
     <div class="introduction">
-        <h1>{{date}}</h1>
+        <div style="display: flex; justify-content: space-around;">
+            <h1>{{date}}</h1>
+
+            <button (click)="irParaInfiniteScroll()">Infinite Scroll</button>
+
+            <button>{{dateNow}}</button>
+        </div>
 
         <div class="container-form-reactive">
             <input type="file" (change)="onFileSelected($event)" #fileUpload>
