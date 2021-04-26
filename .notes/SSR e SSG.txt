@@ -1,0 +1,30 @@
+SERVER SIDE RENDERING (SSR) - ANGULAR UNIVERSAL
+
+1) Criando Projeto com SSR
+  - Criação do Projeto     : ng new <project>
+  - Adicionando ngUniveral : ng add @nguniversal/express-engine
+
+  OBS: ng add @nguniversal/express-engine --clientProject <name>
+
+
+2) Rodando Dynamic SSR
+  - npm run dev:ssr
+  - npm run build:ssr && npm run serve:ssr
+
+
+3) Rodando Static-Pre-Rendering
+  - npm run build:prerender && npm run serve:prerender
+
+
+
+STATIC SITE GENERATORS (SSG) - SCULLY
+
+1) Configurando e Rodando
+  - ng add @scullyio/init
+  - ng build
+  - npm run scully
+
+
+2) Criando componentes
+  - ng g @scullyio/init:blog
+  - ng g @scullyio/init:post
